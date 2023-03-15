@@ -39,10 +39,6 @@ public class Formateur {
      */
     protected List<SessionCours> sessionsCour = new ArrayList<>();
 
-    /**
-     * Ensemble des maitrises
-     */
-    protected List<Maitrise> maitrises = new ArrayList<>();
 
     /**
      * Constructeur par défaut
@@ -144,21 +140,6 @@ public class Formateur {
         this.sessionsCour = sessionsCour;
     }
 
-    /**
-     * Getter des maitrises du formateur
-     * @return maitrises du formateur
-     */
-    public List<Maitrise> getMaitrises() {
-        return maitrises;
-    }
-
-    /**
-     * Setter maitrises
-     * @param maitrises Maitrises du formateur
-     */
-    public void setMaitrises(List<Maitrise> maitrises) {
-        this.maitrises = maitrises;
-    }
 
     /**
      * Egalité de deux formateurs  basée sur le triplet nom,prénom,mail

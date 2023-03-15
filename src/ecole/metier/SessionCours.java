@@ -1,5 +1,6 @@
 package ecole.metier;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Objects;
@@ -13,27 +14,17 @@ public class SessionCours {
     /**
      * Date de début de la sesison de cours
      */
-    protected Date dateDebut;
+    protected LocalDate dateDebut;
 
     /**
      * Date de fin de la session de cours
      */
-    protected Date dateFin;
+    protected LocalDate dateFin;
 
     /**
      * Nombre d'inscrits pour la session de cours
      */
     protected int nbreInscrits;
-
-    /**
-     * Liste des formateurs prévus pour la session de cours
-     */
-    protected ArrayList<Formateur> listFormateurs = new ArrayList();
-
-    /**
-     * Liste des cours qui sont prévus pour la session de cours
-     */
-    protected ArrayList<Cours> listeCours = new ArrayList<>();
 
 
     /**
@@ -59,7 +50,7 @@ public class SessionCours {
      *
      * @return date de début de la session
      */
-    public Date getDateDebut() {
+    public LocalDate getDateDebut() {
         return dateDebut;
     }
 
@@ -68,7 +59,7 @@ public class SessionCours {
      *
      * @param dateDebut date de début de la session
      */
-    public void setDateDebut(Date dateDebut) {
+    public void setDateDebut(LocalDate dateDebut) {
         this.dateDebut = dateDebut;
     }
 
@@ -77,7 +68,7 @@ public class SessionCours {
      *
      * @return date de fin de la session
      */
-    public Date getDateFin() {
+    public LocalDate getDateFin() {
         return dateFin;
     }
 
@@ -86,7 +77,7 @@ public class SessionCours {
      *
      * @param dateFin date de fin de la session
      */
-    public void setDateFin(Date dateFin) {
+    public void setDateFin(LocalDate dateFin) {
         this.dateFin = dateFin;
     }
 
@@ -108,41 +99,6 @@ public class SessionCours {
         this.nbreInscrits = nbreInscrits;
     }
 
-    /**
-     * getter listFormateurs
-     *
-     * @return la liste des formateurs
-     */
-    public ArrayList<Formateur> getListFormateurs() {
-        return listFormateurs;
-    }
-
-    /**
-     * setter listeFormateurs
-     *
-     * @param listFormateurs liste des formateurs
-     */
-    public void setListFormateurs(ArrayList<Formateur> listFormateurs) {
-        this.listFormateurs = listFormateurs;
-    }
-
-    /**
-     * getter listeCours
-
-     * @return la liste des cours
-     */
-    public ArrayList<Cours> getListeCours() {
-        return listeCours;
-    }
-
-    /**
-     * setter listeCours
-     *
-     * @param listeCours liste des cours
-     */
-    public void setListeCours(ArrayList<Cours> listeCours) {
-        this.listeCours = listeCours;
-    }
 
     /**
      * égalité de deux sessions  basées sur le triplet nombre d'inscrits, date de début et date de fin
@@ -177,8 +133,6 @@ public class SessionCours {
                 ", dateDebut=" + dateDebut +
                 ", dateFin=" + dateFin +
                 ", nbreInscrits=" + nbreInscrits +
-                ", listFormateurs=" + listFormateurs +
-                ", listeCours=" + listeCours +
                 '}';
     }
 }

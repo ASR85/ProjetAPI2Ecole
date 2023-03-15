@@ -1,6 +1,8 @@
 package ecole.metier;
 
 import javax.sound.midi.MidiChannel;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -24,6 +26,19 @@ public class Cours {
      * Description du cours
      */
     private String description;
+
+
+    /**
+     * Ensemble des sessions de cours
+     */
+    protected List<SessionCours> sessioncours = new ArrayList<>();
+
+    /**
+     * Ensemble des maitrises
+     */
+    protected List<Maitrise> maitrises = new ArrayList<>();
+
+
 
     /**
      * Constructeur par défaut
@@ -85,11 +100,51 @@ public class Cours {
 
     /**
      * Setter description
-     * @param description Descrption du cours
+     * @param description Description du cours
      */
     public void setDescription(String description) {
         this.description = description;
     }
+
+
+
+
+
+    /**
+     * Getter des maitrises du formateur
+     * @return maitrises du formateur
+     */
+    public List<Maitrise> getMaitrises() {
+        return maitrises;
+    }
+
+    /**
+     * Setter maitrises
+     * @param maitrises Maitrises du formateur
+     */
+    public void setMaitrises(List<Maitrise> maitrises) {
+        this.maitrises = maitrises;
+    }
+
+    /**
+     * Getter des sessions de cours
+     * @return maitrises du cours
+     */
+    public List<SessionCours> getSessioncours() {
+        return sessioncours;
+    }
+
+    /**
+     * Setter sessionscours
+     * @param sessioncours SessionCours du cours
+     */
+    public void setSessioncours(List<SessionCours> sessioncours) {
+        this.sessioncours = sessioncours;
+    }
+
+
+
+
 
     /**
      * Egalité de deux cours basée sur le duo matiere, descrption

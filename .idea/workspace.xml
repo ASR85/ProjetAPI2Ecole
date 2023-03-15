@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b49c5db5-9eeb-4725-aad8-dd87a254dd18" name="Changes" comment="First Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ecole/metier/Cours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ecole/metier/Cours.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ecole/metier/Formateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ecole/metier/Formateur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ecole/metier/Maitrise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ecole/metier/Maitrise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ecole/metier/SessionCours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ecole/metier/SessionCours.java" afterDir="false" />
     </list>
@@ -68,7 +70,11 @@
       <workItem from="1676493617955" duration="2627000" />
       <workItem from="1676532443072" duration="1889000" />
       <workItem from="1676879901635" duration="1106000" />
-      <workItem from="1677582332575" duration="3042000" />
+      <workItem from="1677582332575" duration="3836000" />
+      <workItem from="1677589828429" duration="12000" />
+      <workItem from="1678870064401" duration="608000" />
+      <workItem from="1678870802146" duration="307000" />
+      <workItem from="1678874741399" duration="2472000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1675854948104</created>

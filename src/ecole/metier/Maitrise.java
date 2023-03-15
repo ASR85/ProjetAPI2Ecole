@@ -20,10 +20,6 @@ public class Maitrise {
      */
     protected int degreMaitrise;
 
-    /**
-     * Cours relié à la maitrise
-     */
-    protected Cours cours;
 
     /**
      * Formateur relié à la maitise
@@ -40,10 +36,9 @@ public class Maitrise {
      * @param idMaitrise identifiant de la maitrise
      * @param degreMaitrise Degré de la maitrise 1 2 ou 3
      */
-    public Maitrise(int idMaitrise, int degreMaitrise, Cours cours, Formateur formateur) {
+    public Maitrise(int idMaitrise, int degreMaitrise, Formateur formateur) {
         this.idMaitrise = idMaitrise;
         this.degreMaitrise = degreMaitrise;
-        this.cours = cours;
         this.formateur = formateur;
     }
 
@@ -94,7 +89,6 @@ public class Maitrise {
         return "Maitrise{" +
                 "idMaitrise=" + idMaitrise +
                 ", degreMaitrise=" + degreMaitrise +
-                ", cours=" + cours +
                 ", formateur=" + formateur +
                 '}';
     }
